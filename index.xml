@@ -6,7 +6,23 @@
     <description>Recent content on Cong的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 08 Dec 2021 14:43:46 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 08 Dec 2021 17:33:33 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Js基本语法</title>
+      <link>http://example.org/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
+      <pubDate>Wed, 08 Dec 2021 17:33:33 +0800</pubDate>
+      
+      <guid>http://example.org/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</guid>
+      <description>今天简单学习了一些js的基本语法 1，什么是表达式和语句 表达式一般都有值，语句可能有，也可能没有。比如
+1+2 值为3 add(1,2) 值为函数的返回值 console.log 值为函数本身 console.log(3) 值为函数的返回值---&amp;gt;undefined 上述都是表达式。
+var a = 1 var b 这是一个语句，他可以有自己的值，也可以没有。 需要注意的是，值和返回值不同，只有函数有返回值。在js中大部分空格都没有实际意义，回车也是一样，在return后面不能加回车，如果加回车，他将返回undefined。
+如果函数没有被调用，他的值就是他本身，如果函数被调用，他的值就是他的返回值。 如图所示
+2，标识符的规则 第一个字符，可以是Unicode字母或￥或_或中文。 后面的字符，除了上述几种，还可以有数字。 变量名都是标识符
+var _ = 1 var $ = 2 var ____ = 3 var 你好 = &#39;hi&#39; 3，if else语句 if（表达式）{语句1}else{语句2}，用来做简单判断，如果表达式内容为true，执行语句1，否则执行语句2。if else 语句是可以嵌套使用的，可以添加多个if条件。if语句如果只有一句，{}可以省略，不推荐这样做。
+if(表达式) { 语句 } else if(表达式) { 语句 } else { 语句 } 一般这样使用就可以。
+ 问号冒号表达式 if else语句的一种缩写形式，比如  if(a&amp;gt;b){ console.log(a) } else { console.</description>
+    </item>
+    
     <item>
       <title>第二篇博客</title>
       <link>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
