@@ -6,7 +6,22 @@
     <description>Recent content on Cong的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Wed, 08 Dec 2021 17:33:33 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 09 Dec 2021 15:04:11 +0800</lastBuildDate><atom:link href="http://example.org/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Js对象基本用法</title>
+      <link>http://example.org/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</link>
+      <pubDate>Thu, 09 Dec 2021 15:04:11 +0800</pubDate>
+      
+      <guid>http://example.org/posts/js%E5%AF%B9%E8%B1%A1%E5%9F%BA%E6%9C%AC%E7%94%A8%E6%B3%95/</guid>
+      <description>JS对象的基本用法 今天简单学习了js对象，学到了很重要的东西，这里简单记录一下学习笔记。
+一，声明对象 定义：键值对的集合。对象的属性名为字符串，不带引号设置也为字符串。 let obj = {键：值}
+let obj = {name:&#39;cong&#39;, age:18} let obj2 = new Object({name:&#39;cong&#39;,age:18}) 上述代码是两种声明方式，可以直接声明变量赋值，也可以使用标准写法声明。
+二，删除属性 let obj = {name:&#39;cong&#39;, age:18} delete obj.name delete obj[&#39;name&#39;] 一般采用上述两种方式删除对象属性,需要注意的是，如果将属性值设置为undefined，属性名依然存在，只是值为undefined 判断属性名是否存在的方法&amp;mdash;&amp;ndash;&amp;gt; name in obj
+三，查（读）属性 let obj = {name:&#39;cong&#39;, age:18} Object.keys(obj) //查看所有属性名（不包括隐藏属性） Object.values(obj) //查看所有属性值 Object.entries(obj) //查看属性名和属性值 console.dir(obj) //查看属性+隐藏属性 obj.key(&#39;name&#39;) //查看单个属性的属性值 需要注意的是obj[name],obj[&amp;lsquo;name&amp;rsquo;],obj.name的区别。其中obj.name = obj[&amp;lsquo;name&amp;rsquo;]，obj[name]表示查看name变量对应的值，先变成字符串，再作为属性名，在obj中的属性值。
+四，增，改属性 let obj = {} obj[&#39;name&#39;] = &#39;cong&#39; //如果存在就修改，不存在就增加 obj[&#39;age&#39;] = 18 Object.assign(obj,{name:&#39;cong&#39;,age:18}) // 同时增加或修改多个属性 以上两种为单个赋值和批量赋值。
+五，原型链 每个对象都有原型，如果要自己创建一个对象的原型，可以这样创建。</description>
+    </item>
+    
     <item>
       <title>Js基本语法</title>
       <link>http://example.org/posts/js%E5%9F%BA%E6%9C%AC%E8%AF%AD%E6%B3%95/</link>
@@ -21,24 +36,6 @@ var a = 1 var b 这是一个语句，他可以有自己的值，也可以没有�
 var _ = 1 var $ = 2 var ____ = 3 var 你好 = &#39;hi&#39; 3，if else语句 if（表达式）{语句1}else{语句2}，用来做简单判断，如果表达式内容为true，执行语句1，否则执行语句2。if else 语句是可以嵌套使用的，可以添加多个if条件。if语句如果只有一句，{}可以省略，不推荐这样做。
 if(表达式) { 语句 } else if(表达式) { 语句 } else { 语句 } 一般这样使用就可以。
  问号冒号表达式 if else语句的一种缩写形式，比如  if(a&amp;gt;b){ console.log(a) } else { console.</description>
-    </item>
-    
-    <item>
-      <title>第二篇博客</title>
-      <link>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</link>
-      <pubDate>Wed, 08 Dec 2021 14:43:46 +0800</pubDate>
-      
-      <guid>http://example.org/posts/%E7%AC%AC%E4%BA%8C%E7%AF%87%E5%8D%9A%E5%AE%A2/</guid>
-      <description>第二篇博客 </description>
-    </item>
-    
-    <item>
-      <title>开博大吉</title>
-      <link>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</link>
-      <pubDate>Wed, 08 Dec 2021 11:46:26 +0800</pubDate>
-      
-      <guid>http://example.org/posts/%E5%BC%80%E5%8D%9A%E5%A4%A7%E5%90%89/</guid>
-      <description>大家好，我的博客开通了 </description>
     </item>
     
   </channel>
