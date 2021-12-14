@@ -6,14 +6,19 @@
     <description>Recent content in Posts on Cong的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-Hans</language>
-    <lastBuildDate>Tue, 14 Dec 2021 15:20:56 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 14 Dec 2021 15:26:52 +0800</lastBuildDate><atom:link href="http://example.org/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>JS函数对象</title>
       <link>http://example.org/posts/js%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1/</link>
-      <pubDate>Tue, 14 Dec 2021 15:20:56 +0800</pubDate>
+      <pubDate>Tue, 14 Dec 2021 15:26:52 +0800</pubDate>
       
       <guid>http://example.org/posts/js%E5%87%BD%E6%95%B0%E5%AF%B9%E8%B1%A1/</guid>
-      <description></description>
+      <description>JS函数对象 在讲函数之前，我们需要先知道函数也是一种对象。
+1,定义函数 function fn(形参1,形参2){ 语句 return 返回值 } //具名函数  let a = function(x,y){ } //匿名函数  let f1 = ()=&amp;gt;{} //箭头函数  let f2 = new Function(&amp;#39;x&amp;#39;,&amp;#39;y&amp;#39;,&amp;#39;return x+y&amp;#39;) //使用构造函数，基本没人用，可以让你知道所有函数都是Function构造的，包括Object，Array，Function本身。  fn() //函数调用  2，函数要素（每个函数都有）   调用时机 函数在调用的时候，才会去使用，并不是声明了直接使用，注意调用时机。
+  作用域 每个函数都会默认创建一个作用域，一般都在{}中，其中在全局作用域声明的变量是全局变量，比如window的属性，其他的变量都是局部变量。作用域遵循就近原则。
+  闭包 如果一个函数用到了外部的变量，那么这个函数加这个变量，就叫做闭包。
+  function f1(){ let a = 2 function f2(){ console.log(a) } } 上述代码就是一种简单的闭包。
+ 形式参数 在创建一个函数时，会给这个函数赋予参数，这些就是形式参数，并不是实际的参数，实际的参数在调用函数时传递，然后赋值给形参。  function fn(a,b){ return a+b } fn(1,2) 上述代码中的a,b是形式参数。1，2是实际参数，会被赋值给a，b。</description>
     </item>
     
     <item>
